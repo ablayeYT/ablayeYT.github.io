@@ -1,5 +1,4 @@
-const div = document.getElementByID("script");
-div.innerHTML("xD");
+document.write("xD");
 
 vrai = true;
 
