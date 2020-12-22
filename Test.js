@@ -1,10 +1,9 @@
-document.write("xD");
+let playerNumber = 3;
 
-document.write("CRAFTIUM");
-
-document.write("EN DEV");
-
-document.write("PLAYER : 3");
+document.write("xD\n");
+document.write("CRAFTIUM\n");
+document.write("EN DEV\n");
+document.write("JOUEURS : " + playerNumber +"\n");
 
 vrai = true;
 
