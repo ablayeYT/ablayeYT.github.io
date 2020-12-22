@@ -1,2 +1,6 @@
 # craftium
-SOON
+<Scrpit.js>
+if (true) {
+console.log ("xd")
+}
+
