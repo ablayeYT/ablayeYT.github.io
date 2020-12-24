@@ -9,11 +9,8 @@ request.onreadystatechange = () => {
   }
 };
 
-request.open("GET", "https://mon.serveur.mc/json/infos/players");
+request.open("GET", "https://ablayeyt.github.io/json/infos/players");
 request.send();
-
-// comme y'a pas de site on va mettre à 3 lol
-playerNumber = 3;
 
 
 document.write("xD <br />");
