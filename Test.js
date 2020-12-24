@@ -1,4 +1,4 @@
-let playerNumber = null;
+let playerNumber = 0;
 
 const request = new XMLHttpRequest();
 
