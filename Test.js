@@ -3,8 +3,8 @@ let playerNumber = null;
 const request = new XMLHttpRequest();
 
 request.onreadystatechange = () => {
-  if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-    let response = JSON.parse(this.responseText);
+  if (this.readyState == XMLHttpRequest.DONE && this.status >= 200 && this.status < 300) {
+    var response = JSON.parse(this.responseText);
     playerNumber = response.player_count;
   }
 };
