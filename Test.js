@@ -5,7 +5,7 @@ const request = new XMLHttpRequest();
 request.onreadystatechange = () => {
   if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
     let response = JSON.parse(this.responseText);
-    playerNumber = response.playernumber;
+    playerNumber = response.player_count;
   }
 };
 
