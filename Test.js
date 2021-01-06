@@ -1,4 +1,4 @@
-let playerNumber = 0;
+let playerNumber = 9;
 
 const request = new XMLHttpRequest();
 
@@ -13,8 +13,8 @@ request.open("GET", "https://ablayeyt.github.io/json/infos/players");
 request.send();
 
 
-document.write("xD <br />");
-document.write("CRAFTIUM <br />");
+document.write("<br />");
+document.write("NARTIUM <br />");
 document.write("EN DEV <br />");
 document.write("JOUEURS : " + playerNumber +"<br/>");
 
@@ -25,5 +25,5 @@ if (vrai) {
 
   console.log ("EN DEV");
 
-  console.log ("PLAYER : 3");
+  console.log ("PLAYER : 8");
 }
