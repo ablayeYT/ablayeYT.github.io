@@ -3,7 +3,9 @@ document.write('<style>.bd-placeholder-img {font-size: 1.125rem;text-anchor: mid
 const showpass = (box) => {
 	if (box.checked) {
 		document.getElementById("inputPassword").setAttribute("type", "text");
+		alert("pass = shown");
 	} else {
 		document.getElementById("inputPassword").setAttribute("type", "password");
+		alert("pass = hidden");
 	}
 }
