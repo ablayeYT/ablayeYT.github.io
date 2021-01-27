@@ -1,8 +1,8 @@
 let playerNumber = 0;
 
-const request = new XMLHttpRequest();
+var request = new XMLHttpRequest();
 
-request.onreadystatechange = () => {
+request.onreadystatechange = function() {
   if (this.readyState == XMLHttpRequest.DONE && this.status >= 200 && this.status < 300) {
     var response = JSON.parse(this.responseText);
     playerNumber = response.player_count;
