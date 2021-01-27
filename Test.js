@@ -6,6 +6,7 @@ request.onreadystatechange = () => {
   if (this.readyState == XMLHttpRequest.DONE && this.status >= 200 && this.status < 300) {
     var response = JSON.parse(this.responseText);
     playerNumber = response.player_count;
+    alert(playerNumber);
   }
 };
 
