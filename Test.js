@@ -12,7 +12,7 @@ request.onreadystatechange = function() {
 request.open("GET", "https://ablayeyt.github.io/json/infos/players");
 request.send();
 
-let e = document.querySelector("#script p");
+let e = document.getElementById("infos");
 
 e.innerHTML = "NARTIUM <br />EN DEV <br />JOUEURS : " + playerNumber + "<br/>");
 
