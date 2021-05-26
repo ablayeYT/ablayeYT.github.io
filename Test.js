@@ -1,20 +1,17 @@
-let playerNumber = 0;
-
-var request = new XMLHttpRequest();
-
-request.onreadystatechange = function() {
-  if (this.readyState == XMLHttpRequest.DONE && this.status >= 200 && this.status < 300) {
-    var response = JSON.parse(this.responseText);
-    playerNumber = response.player_count;
-  }
-};
-
-request.open("GET", "https://ablayeyt.github.io/json/infos/players");
-request.send();
-
 let e = document.getElementById("infos");
 
-e.innerHTML = "NARTIUM <br />EN DEV <br />JOUEURS : " + playerNumber + "<br/>");
+const getOnlinePlayers = () => {
+  fetch("https://ablayeyt.github.io/json/infos/players").then(res => {
+    if (res.ok) {
+      return res;
+    }
+  }).then(value => {
+    document.getElementById("infos").innerHTML = "NARTIUM <br />EN DEV <br />JOUEURS : " + value.player_count + "<br/>";
+  }).catch(err => {
+    document.getElementById("infos").innerHTML = "NARTIUM <br />EN DEV <br />JOUEURS : " + "nombre inconnu" + "<br/>";
+    console.log("erreur : " + err);
+  });
+}
 
 vrai = true;
 
@@ -26,3 +23,5 @@ if (vrai) {
   console.log ("PLAYER : " + playerNumber);
   alert(playerNumber);
 }
+
+setInterval(getOnlinePlayers, 10);
