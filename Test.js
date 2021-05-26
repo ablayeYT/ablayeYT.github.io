@@ -21,4 +21,4 @@ if (vrai) {
   console.log ("EN DEV");
 }
 
-setInterval(getOnlinePlayers, 10);
+// setInterval(getOnlinePlayers, 10);
