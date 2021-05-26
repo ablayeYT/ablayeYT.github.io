@@ -19,9 +19,6 @@ if (vrai) {
   console.log ("CRAFTIUM");
 
   console.log ("EN DEV");
-
-  console.log ("PLAYER : " + playerNumber);
-  alert(playerNumber);
 }
 
 setInterval(getOnlinePlayers, 10);
